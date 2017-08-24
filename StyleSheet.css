@@ -1,27 +1,29 @@
 ﻿
 body {
-    background: #708cc7;
+    
 }
 
-.container {
-    display: flex;
+.container-fluid {
+ 
+    background: #708cc7;
 }
 
 .list1 {
     display: inline-block;
     background-color: aliceblue;
     border-width: medium;
-    margin: 15px;
     padding: 10px;
+    margin-bottom: 15px;
 }
 
 .list2 {
     display: inline-block;
     background-color: burlywood;
     border-width: medium;
-    margin: 15px;
     padding: 10px;
-    //width: 400px;
+    margin-bottom: 15px;
+}
+    
 }
 form {
     display: inline-block;
@@ -70,9 +72,12 @@ ol {
         color: #000;
     }
 
-        ol li:nth-child(even) {
+        #firstList li:nth-child(even) {
             background-color: azure;
         }
+#thornList li:nth-child(even) {
+    background-color: beige;
+}
 
 .strike {
     text-decoration: line-through;
@@ -80,4 +85,8 @@ ol {
 
 li:hover {
     cursor: pointer;
+}
+footer{
+    text-align:center;
+    font-weight: bold;
 }

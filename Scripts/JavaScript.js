@@ -1,29 +1,38 @@
 ﻿$(document).ready(function () {
-    $("#add").click(function () {
-        //$("#firstList").append("<li>First item</li>");
-        var task = $("input[name=ListItem").val()
-        $("ol").append("<li>" + task + "</li>");
+    $("#add1").click(function () {
+        var task = $("input[name=firstListItem]").val()
+        $("#firstList").append("<li>" + task + "</li>")
+         $("input[name=firstListItem]").val("");
+    });
+    $("#add2").click(function () {
+        var task2 = $("input[name=thornListItem]").val()
+        $("#thornList").append("<li>" + task2 + "</li>");
+        $("input[name=firstListItem]").val("");
     });
 
-    //$("ol").sortable();
+    $("input[name=firstListItem]").keyup(function (event) {
+        if (event.keyCode == 13) {
+            var task = $("input[name=firstListItem]").val()
+            $("#firstList").append("<li>" + task + "</li>");
+        }
+    });
+
+    $("input[name=thornListItem]").keyup(function (event) {
+        if (event.keyCode == 13) {
+            var task2 = $("input[name=thornListItem]").val()
+            $("#thornList").append("<li>" + task2 + "</li>");
+            $("input[name=firstListItem]").val("");
+          
+        }
+    });
+    $(document).on("dblclick", "li", function () {
+        $(this).toggleClass("strike");
+    });
+    $("ol").sortable();
+    $("li").html("task");
  });
 
-//$(document).ready(function () {
-//    $("#button").click(function () {
-//            var task = $("input[name=ListItem").val()
-//            $("ol").append("<li>" + task + "</li>");
-//        });
 
-    //$("input[name=ListItem]").keyup(function (event) {
-    //    if (event.keyCode == 13) {
-    //        $("#button").click();
-    //    }
-    //});
-    //$("li").html("task")
-
-    //$(document).on("dblclick", "li", function () {
-    //    $(this).toggleClass("strike");
-    //});
 
     //$("input").focus(function () {
     //    $(this).val("");
