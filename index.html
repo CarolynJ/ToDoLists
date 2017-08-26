@@ -14,11 +14,11 @@
 </head >
         <body>
                 <div class="container-fluid">
-                    <h1>Dynamic Lists (Practicing Jquery)</h1>
+                    <h2 id="title" style="text-align:center">Dynamic Lists (Practicing Jquery)</h2>
                     <p></p>
                     <p></p>
                     <div class="row">
-                        <div class="list1 col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                        <div class="list1 col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">
                             <div class="well">
                                 <h2>Things To Do Today</h2>
                                 <p>What do you need to get done today?</p>
@@ -26,9 +26,9 @@
                                 <p><em>Click and drag to reorder, double click to cross an item off.</em></p>
 
                                 <form>
-                                    <input type="text" name="firstListItem">
+                                    <input type="text" name="firstListItem"> <button id="add1">Add</button>
                                 </form>
-                                    <button id="add1">Add item</button>
+                                 
                                
                                     <ol id="firstList">
                                         <li>Make coffee</li>
@@ -36,14 +36,14 @@
                               
                             </div>
                         </div>
-                        <div class="well list2 col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-12">
+                        <div class="list2 col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">
                             <div class="well">
                                 <h2>The Thorn List</h2>
                                 <p>I often have items that need to be done "soon" but aren't urgent or can't be done today. They are a bit like thorns in my side and are much easier to deal with on their own list!</p>
                                 <form name="toDoList2">
-                                    <input type="text" name="thornListItem" />
+                                    <input type="text" name="thornListItem" /> <button id="add2">Add</button>
                                 </form>
-                                    <button id="add2">Add item</button>
+                                    
                                
                                     <ol id="thornList">
                                         <li>Learn Spanish</li>

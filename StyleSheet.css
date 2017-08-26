@@ -6,6 +6,11 @@ body {
 .container-fluid {
  
     background: #708cc7;
+    padding: 15px;
+}
+#title{
+    text-align:center;
+    
 }
 
 .list1 {
