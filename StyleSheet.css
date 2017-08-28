@@ -1,17 +1,18 @@
 ﻿
-body {
-    
-}
+    body.dragging {
+        cursor: move 
+    }
+   
+    .dragged{
+        position: absolute;
+        opacity: .5;
+        z-index: 2000;
+    }
 
 .container-fluid {
- 
     background: #708cc7;
-    padding: 15px;
 }
-#title{
-    text-align:center;
-    
-}
+
 
 .list1 {
     display: inline-block;
@@ -28,7 +29,12 @@ body {
     padding: 10px;
     margin-bottom: 15px;
 }
-    
+
+inputRow {
+    display: flex;
+}
+#add1{
+    display: inline-block;
 }
 form {
     display: inline-block;

@@ -14,7 +14,7 @@
 </head >
         <body>
                 <div class="container-fluid">
-                    <h2 id="title" style="text-align:center">Dynamic Lists (Practicing Jquery)</h2>
+                    <h2 style="text-align:center">Dynamic Lists (Practicing Jquery)</h2>
                     <p></p>
                     <p></p>
                     <div class="row">
@@ -24,13 +24,13 @@
                                 <p>What do you need to get done today?</p>
                                 <p></p>
                                 <p><em>Click and drag to reorder, double click to cross an item off.</em></p>
-
-                                <form>
-                                    <input type="text" name="firstListItem"> <button id="add1">Add</button>
-                                </form>
-                                 
-                               
-                                    <ol id="firstList">
+                                <div class="row inputRow">
+                                    <form>
+                                        <input type="text" name="firstListItem">
+                                    </form>
+                                    <button id="add1">Add</button>
+                                </div>
+                                    <ol id="firstList" class="list">
                                         <li>Make coffee</li>
                                     </ol>
                               
@@ -40,16 +40,16 @@
                             <div class="well">
                                 <h2>The Thorn List</h2>
                                 <p>I often have items that need to be done "soon" but aren't urgent or can't be done today. They are a bit like thorns in my side and are much easier to deal with on their own list!</p>
-                                <form name="toDoList2">
-                                    <input type="text" name="thornListItem" /> <button id="add2">Add</button>
-                                </form>
-                                    
-                               
-                                    <ol id="thornList">
+                                <div class="row inputRow">
+                                    <form name="toDoList2">
+                                        <input type="text" name="thornListItem" />
+                                    </form>
+                                    <button id="add2">Add</button>
+                                </div>
+                                    <ol id="thornList" class="list">
                                         <li>Learn Spanish</li>
                                         <li>Clean Gutters</li>
                                     </ol>
-                               
                             </div>
                         </div>
                     </div>
@@ -57,8 +57,11 @@
             <footer>Written and coded by Carolyn Jillson</footer>
                 <!-- Scripts -->
 
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
+
+            <script src="Scripts/jquery-1.9.1.min.js"></script>
+            <script src='js/jquery-sortable.js'></script>
             <script src="Scripts/JavaScript.js"></script>
+         
  
 </body>
 </html>
