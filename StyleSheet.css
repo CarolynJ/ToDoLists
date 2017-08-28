@@ -12,7 +12,17 @@
 .container-fluid {
     background: #708cc7;
 }
+.container-fluid:hover {
+    background-color:lightcoral;
+}
 
+.bold {
+    font-weight: bold;
+        font-size:larger;
+}
+.red{
+    color: red;
+}
 
 .list1 {
     display: inline-block;

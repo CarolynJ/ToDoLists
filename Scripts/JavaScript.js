@@ -1,4 +1,17 @@
 ﻿$(document).ready(function () {
+    $("#listTitle1").click(function () {
+        $("#listTitle1").addClass("bold");
+    });
+    $("#listTitle1").dblclick(function () {
+        $("#listTitle1").removeClass("bold");
+    });
+    $("#listTitle2").click(function () {
+        $("#listTitle2").addClass("red");
+    });
+    $("#listTitle2").dblclick(function () {
+        $("#listTitle2").removeClass("red");
+    });
+        
     $("#add1").click(function () {
         var task = $("input[name=firstListItem]").val()
         $("#firstList").append("<li>" + task + "</li>")
@@ -30,6 +43,8 @@
     $(function () {
         $("ol.list").sortable();
     });
+   
+
  });
 
    //$(function () {
